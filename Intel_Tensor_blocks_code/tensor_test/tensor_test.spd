@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="dsp_prime_10/sim/tensor_test_dsp_prime_10_qbfmubi.v"
+   type="VERILOG"
+   library="dsp_prime_10" />
+ <file
+   path="sim/tensor_test.v"
+   type="VERILOG"
+   library="tensor_test"
+   hasInlineConfiguration="true" />
+ <topLevel name="tensor_test.tensor_test" />
+ <deviceFamily name="stratix10" />
+ <device name="1SN21BHU1F53E1VG" />
+</simPackage>

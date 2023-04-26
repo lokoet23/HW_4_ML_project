@@ -1,0 +1,18 @@
+# system info tensor_test on 2023.04.11.17:46:49
+system_info:
+name,value
+DEVICE,1SN21BHU1F53E1VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for tensor_test on 2023.04.11.17:46:49
+files:
+filepath,kind,attributes,module,is_top
+sim/tensor_test.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,tensor_test,true
+dsp_prime_10/sim/tensor_test_dsp_prime_10_qbfmubi.v,VERILOG,,tensor_test_dsp_prime_10_qbfmubi,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+tensor_test.dsp_prime_0,tensor_test_dsp_prime_10_qbfmubi

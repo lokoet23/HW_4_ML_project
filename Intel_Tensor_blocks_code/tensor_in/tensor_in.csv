@@ -1,0 +1,18 @@
+# system info tensor_in on 2023.04.11.18:04:51
+system_info:
+name,value
+DEVICE,1SN21BHU1F53E1VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for tensor_in on 2023.04.11.18:04:51
+files:
+filepath,kind,attributes,module,is_top
+sim/tensor_in.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,tensor_in,true
+dsp_prime_10/sim/tensor_in_dsp_prime_10_4ep4apy.v,VERILOG,,tensor_in_dsp_prime_10_4ep4apy,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+tensor_in.dsp_prime_0,tensor_in_dsp_prime_10_4ep4apy

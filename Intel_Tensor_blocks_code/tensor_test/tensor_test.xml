@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2023.04.11.17:46:52"
+ outputDirectory="/home/ecelrc/students/afadul/hwml/test/tensor_test/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Stratix 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="1SN21BHU1F53E1VG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="feed_sel" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="feed_sel" direction="input" role="feed_sel" width="2" />
+  </interface>
+  <interface name="load_bb_one" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="load_bb_one" direction="input" role="load_bb_one" width="1" />
+  </interface>
+  <interface name="load_bb_two" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="load_bb_two" direction="input" role="load_bb_two" width="1" />
+  </interface>
+  <interface name="load_buf_sel" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="load_buf_sel" direction="input" role="load_buf_sel" width="1" />
+  </interface>
+  <interface name="data_in_1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_1" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_2" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_3" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_3" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_4" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_4" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_5" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_5" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_6" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_6" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_7" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_7" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_8" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_8" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_9" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_9" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="data_in_10" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="data_in_10" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="side_in_1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="side_in_1" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="side_in_2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="side_in_2" direction="input" role="data_in" width="8" />
+  </interface>
+  <interface name="cascade_weight_out" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="cascade_weight_out"
+       direction="output"
+       role="cascade_weight_out"
+       width="80" />
+  </interface>
+  <interface name="int25_col_1" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="int25_col_1" direction="output" role="result_l" width="25" />
+  </interface>
+  <interface name="int25_col_2" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="int25_col_2"
+       direction="output"
+       role="result_l,result_h"
+       width="25" />
+  </interface>
+  <interface name="int25_col_3" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="int25_col_3" direction="output" role="result_h" width="25" />
+  </interface>
+ </perimeter>
+ <entity kind="tensor_test" version="1.0" name="tensor_test">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="1SN21BHU1F53E1VG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <generatedFiles>
+   <file
+       path="/home/ecelrc/students/afadul/hwml/test/tensor_test/synth/tensor_test.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/ecelrc/students/afadul/hwml/test/tensor_test/synth/tensor_test.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="/home/ecelrc/students/afadul/hwml/test/tensor_test.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/misc/linuxws/packages/quartus_21.1/intelFPGA_pro/21.1/ip/altera/dsp_prime/dsp_prime_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="tensor_test">"Generating: tensor_test"</message>
+   <message level="Info" culprit="tensor_test">"Generating: tensor_test_dsp_prime_10_qbfmubi"</message>
+   <message level="Info" culprit="dsp_prime_0">generating top-level entity tensor_test_dsp_prime_10_qbfmubi</message>
+  </messages>
+ </entity>
+ <entity
+   kind="dsp_prime"
+   version="1.0"
+   name="tensor_test_dsp_prime_10_qbfmubi">
+  <parameter name="enable_cascade_weight_out" value="Yes" />
+  <parameter name="enable_ena" value="No" />
+  <parameter name="enable_zero_en" value="No" />
+  <parameter name="enable_cascade_weight_in" value="No" />
+  <parameter name="enable_feed_sel" value="Yes" />
+  <parameter name="enable_clr1" value="No" />
+  <parameter name="enable_load_buf_sel" value="Yes" />
+  <parameter name="base_device" value="ND4P" />
+  <parameter name="enable_clr0" value="No" />
+  <parameter name="enable_cascade_data_out" value="No" />
+  <parameter name="dsp_mode" value="TENSOR_FXP" />
+  <parameter name="dsp_sel_int4" value="SELECT_INT8" />
+  <parameter name="dsp_cascade" value="CASCADE_DISABLED" />
+  <parameter name="enable_load_bb_one" value="Yes" />
+  <parameter name="enable_load_bb_two" value="Yes" />
+  <parameter name="enable_acc_en" value="No" />
+  <parameter name="dsp_fp32_sub_en" value="FLOAT_SUB_DISABLED" />
+  <generatedFiles>
+   <file
+       path="/home/ecelrc/students/afadul/hwml/test/tensor_test/dsp_prime_10/synth/tensor_test_dsp_prime_10_qbfmubi.v"
+       attributes="" />
+   <file
+       path="/home/ecelrc/students/afadul/hwml/test/tensor_test/dsp_prime_10/synth/dsp_prime_parameters.tcl"
+       attributes="" />
+   <file
+       path="/home/ecelrc/students/afadul/hwml/test/tensor_test/dsp_prime_10/synth/dsp_prime.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/ecelrc/students/afadul/hwml/test/tensor_test/dsp_prime_10/synth/tensor_test_dsp_prime_10_qbfmubi.v"
+       attributes="" />
+   <file
+       path="/home/ecelrc/students/afadul/hwml/test/tensor_test/dsp_prime_10/synth/dsp_prime_parameters.tcl"
+       attributes="" />
+   <file
+       path="/home/ecelrc/students/afadul/hwml/test/tensor_test/dsp_prime_10/synth/dsp_prime.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/misc/linuxws/packages/quartus_21.1/intelFPGA_pro/21.1/ip/altera/dsp_prime/dsp_prime_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="tensor_test" as="dsp_prime_0" />
+  <messages>
+   <message level="Info" culprit="tensor_test">"Generating: tensor_test_dsp_prime_10_qbfmubi"</message>
+   <message level="Info" culprit="dsp_prime_0">generating top-level entity tensor_test_dsp_prime_10_qbfmubi</message>
+  </messages>
+ </entity>
+</deploy>

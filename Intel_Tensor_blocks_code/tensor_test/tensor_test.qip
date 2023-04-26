@@ -1,0 +1,62 @@
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_TOOL_VERSION "21.1"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_TOP_LEVEL_COMPONENT_NAME "dsp_prime"
+set_global_assignment -library "tensor_test" -name SOPCINFO_FILE [file join $::quartus(qip_path) "tensor_test.sopcinfo"]
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name SLD_INFO "QSYS_NAME tensor_test HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "tensor_test" -name MISC_FILE [file join $::quartus(qip_path) "tensor_test.cmp"]
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_TARGETED_DEVICE_FAMILY "Stratix 10"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_TARGETED_PART_TRAIT "BASE_DEVICE::ND4P"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_GENERATED_DEVICE_FAMILY "{Stratix 10}"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "tensor_test" -name MISC_FILE [file join $::quartus(qip_path) "../tensor_test.ip"]
+
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_NAME "dGVuc29yX3Rlc3RfZHNwX3ByaW1lXzEwX3FiZm11Ymk="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_DISPLAY_NAME "TmF0aXZlIEFJIE9wdGltaXplZCBEU1AgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_DESCRIPTION "VGhlIE5hZGRlciBQcmltZSBEU1AgSVAgaXMgYSBmbGV4aWJsZSBhbmQgY29uZmlndXJhYmxlIGZ1bmN0aW9uIGJsb2NrIG9wdGltaXplZCB0byBzdXBwb3J0IEFJIGFuZCBNYWNoaW5lIExlYXJuaW5nIGFwcGxpY2F0aW9ucy4="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZHNwX21vZGU=::VEVOU09SX0ZYUA==::U2VsZWN0IE9wZXJhdGlvbiBNb2Rl"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZHNwX3NlbF9pbnQ0::U0VMRUNUX0lOVDg=::U2VsZWN0IERPVCBQcm9kdWN0IENvbXB1dGF0aW9uIFN0eWxl"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZHNwX2Nhc2NhZGU=::Q0FTQ0FERV9ESVNBQkxFRA==::RW5hYmxlIENhc2NhZGUgRGF0YSBJbg=="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2Nhc2NhZGVfZGF0YV9vdXQ=::Tm8=::RW5hYmxlIENhc2NhZGUgRGF0YSBPdXQ="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZHNwX2ZwMzJfc3ViX2Vu::RkxPQVRfU1VCX0RJU0FCTEVE::U2VsZWN0IFNpbmdsZS1QcmVjaXNpb24gRmxvYXRpbmctUG9pbnQgT3BlcmF0aW9u"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2ZlZWRfc2Vs::WWVz::RW5hYmxlICdmZWVkX3NlbCcgcG9ydA=="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2xvYWRfYmJfb25l::WWVz::RW5hYmxlICdsb2FkX2JiX29uZScgcG9ydA=="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2xvYWRfYmJfdHdv::WWVz::RW5hYmxlICdsb2FkX2JiX3R3bycgcG9ydA=="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2xvYWRfYnVmX3NlbA==::WWVz::RW5hYmxlICdsb2FkX2J1Zl9zZWwnIHBvcnQ="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2FjY19lbg==::Tm8=::RW5hYmxlICdhY2NfZW4nIHBvcnQ="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX3plcm9fZW4=::Tm8=::RW5hYmxlICd6ZXJvX2VuJyBwb3J0"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2Nhc2NhZGVfd2VpZ2h0X2lu::Tm8=::RW5hYmxlIENhc2NhZGUgV2VpZ2h0IElu"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2Nhc2NhZGVfd2VpZ2h0X291dA==::WWVz::RW5hYmxlIENhc2NhZGUgV2VpZ2h0IE91dA=="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2VuYQ==::Tm8=::RW5hYmxlICdlbmEnIHBvcnQ="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2NscjA=::Tm8=::RW5hYmxlIGNscjAgZm9yIGFsbCBpbnB1dCByZWdpc3RlcnM="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "ZW5hYmxlX2NscjE=::Tm8=::RW5hYmxlIGNscjEgZm9yIG91dHB1dCBhbmQgcGlwZWxpbmUgcmVnaXN0ZXJz"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_PARAMETER "YmFzZV9kZXZpY2U=::TkQ0UA==::YmFzZV9kZXZpY2U="
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_COMPONENT_GROUP "RFNQL0RTUCBQcmltZQ=="
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_NAME "dGVuc29yX3Rlc3Q="
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::U3RyYXRpeCAxMA==::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MVNOMjFCSFUxRjUzRTFWRw==::QXV0byBERVZJQ0U="
+set_global_assignment -entity "tensor_test" -library "tensor_test" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::MQ==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+
+
+set_global_assignment -library "dsp_prime_10" -name VERILOG_FILE [file join $::quartus(qip_path) "dsp_prime_10/synth/tensor_test_dsp_prime_10_qbfmubi.v"]
+set_instance_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "dsp_prime_10/synth/dsp_prime_parameters.tcl"]
+set_instance_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "dsp_prime_10/synth/dsp_prime.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
+set_global_assignment -library "tensor_test" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/tensor_test.v"]
+
+
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_TOOL_NAME "dsp_prime"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_TOOL_VERSION "1.0"
+set_global_assignment -entity "tensor_test_dsp_prime_10_qbfmubi" -library "dsp_prime_10" -name IP_TOOL_ENV "QsysPrimePro"
+

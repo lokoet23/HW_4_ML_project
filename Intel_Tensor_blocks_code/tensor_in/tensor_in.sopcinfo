@@ -1,0 +1,1677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnsembleReport name="tensor_in" kind="tensor_in" version="1.0" fabric="QSYS">
+ <!-- Format version 21.1 169 (Future versions may contain additional information.) -->
+ <!-- 2023.04.11.18:04:54 -->
+ <!-- A collection of modules and connections -->
+ <parameter name="AUTO_GENERATION_ID">
+  <type>java.lang.Integer</type>
+  <value>0</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>GENERATION_ID</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_UNIQUE_ID">
+  <type>java.lang.String</type>
+  <value></value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>UNIQUE_ID</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE_FAMILY">
+  <type>java.lang.String</type>
+  <value>Stratix 10</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE">
+  <type>java.lang.String</type>
+  <value>1SN21BHU1F53E1VG</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE_SPEEDGRADE">
+  <type>java.lang.String</type>
+  <value>1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_SPEEDGRADE</sysinfo_type>
+ </parameter>
+ <parameter name="deviceFamily">
+  <type>java.lang.String</type>
+  <value>Stratix 10</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+ </parameter>
+ <parameter name="generateLegacySim">
+  <type>boolean</type>
+  <value>false</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid>
+ </parameter>
+ <module
+   name="dsp_prime_0"
+   kind="dsp_prime"
+   version="1.0"
+   entity="tensor_in_dsp_prime_10_4ep4apy"
+   library="dsp_prime_10"
+   path="dsp_prime_0"
+   hpath="dsp_prime_0"
+   className="dsp_prime">
+  <!-- Describes a single module. Module parameters are
+the requested settings for a module instance. -->
+  <parameter name="dsp_mode">
+   <type>java.lang.String</type>
+   <value>TENSOR_FP</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="dsp_sel_int4">
+   <type>java.lang.String</type>
+   <value>SELECT_INT8</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="dsp_cascade">
+   <type>java.lang.String</type>
+   <value>CASCADE_DISABLED</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_cascade_data_out">
+   <type>java.lang.String</type>
+   <value>No</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="dsp_fp32_sub_en">
+   <type>java.lang.String</type>
+   <value>FLOAT_SUB_DISABLED</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_feed_sel">
+   <type>java.lang.String</type>
+   <value>Yes</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_load_bb_one">
+   <type>java.lang.String</type>
+   <value>Yes</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_load_bb_two">
+   <type>java.lang.String</type>
+   <value>Yes</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_load_buf_sel">
+   <type>java.lang.String</type>
+   <value>Yes</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_acc_en">
+   <type>java.lang.String</type>
+   <value>No</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_zero_en">
+   <type>java.lang.String</type>
+   <value>No</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_cascade_weight_in">
+   <type>java.lang.String</type>
+   <value>No</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_cascade_weight_out">
+   <type>java.lang.String</type>
+   <value>Yes</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_ena">
+   <type>java.lang.String</type>
+   <value>Yes</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_clr0">
+   <type>java.lang.String</type>
+   <value>Yes</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="enable_clr1">
+   <type>java.lang.String</type>
+   <value>Yes</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="base_device">
+   <type>java.lang.String</type>
+   <value>ND4P</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>PART_TRAIT</sysinfo_type>
+   <sysinfo_arg>BASE_DEVICE</sysinfo_arg>
+  </parameter>
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <interface name="clk" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+  </interface>
+  <interface name="clr0" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>clr0</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clr</role>
+   </port>
+  </interface>
+  <interface name="clr1" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>clr1</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clr</role>
+   </port>
+  </interface>
+  <interface name="ena" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>ena</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>ena</role>
+   </port>
+  </interface>
+  <interface name="feed_sel" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>feed_sel</name>
+    <direction>Input</direction>
+    <width>2</width>
+    <role>feed_sel</role>
+   </port>
+  </interface>
+  <interface name="load_bb_one" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>load_bb_one</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>load_bb_one</role>
+   </port>
+  </interface>
+  <interface name="load_bb_two" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>load_bb_two</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>load_bb_two</role>
+   </port>
+  </interface>
+  <interface name="load_buf_sel" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>load_buf_sel</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>load_buf_sel</role>
+   </port>
+  </interface>
+  <interface name="data_in_1" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_1</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_2" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_2</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_3" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_3</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_4" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_4</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_5" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_5</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_6" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_6</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_7" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_7</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_8" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_8</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_9" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_9</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="data_in_10" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>data_in_10</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="side_in_1" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>side_in_1</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="side_in_2" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>side_in_2</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>data_in</role>
+   </port>
+  </interface>
+  <interface name="shared_exponent_data" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>input</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>shared_exponent_data</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>shared_exponent</role>
+   </port>
+  </interface>
+  <interface name="cascade_weight_out" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>output</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>cascade_weight_out</name>
+    <direction>Output</direction>
+    <width>88</width>
+    <role>cascade_weight_out</role>
+   </port>
+  </interface>
+  <interface name="bf24_col_1" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>output</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>bf24_col_1</name>
+    <direction>Output</direction>
+    <width>24</width>
+    <role>result_l</role>
+   </port>
+  </interface>
+  <interface name="bf24_col_2" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>output</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>bf24_col_2</name>
+    <direction>Output</direction>
+    <width>24</width>
+    <role>result_l,result_h</role>
+   </port>
+  </interface>
+  <interface name="bf24_col_3" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>ui.blockdiagram.direction</name>
+    <value>output</value>
+   </assignment>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>bf24_col_3</name>
+    <direction>Output</direction>
+    <width>24</width>
+    <role>result_h</role>
+   </port>
+  </interface>
+ </module>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>dsp_prime</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Native AI Optimized DSP Intel FPGA IP</displayName>
+  <version>1.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>25</instanceCount>
+  <name>conduit_end</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Conduit</displayName>
+  <version>21.1</version>
+ </plugin>
+ <reportVersion>21.1 169</reportVersion>
+ <uniqueIdentifier></uniqueIdentifier>
+</EnsembleReport>

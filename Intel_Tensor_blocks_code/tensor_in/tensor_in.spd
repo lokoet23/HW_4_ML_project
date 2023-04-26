@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="dsp_prime_10/sim/tensor_in_dsp_prime_10_4ep4apy.v"
+   type="VERILOG"
+   library="dsp_prime_10" />
+ <file
+   path="sim/tensor_in.v"
+   type="VERILOG"
+   library="tensor_in"
+   hasInlineConfiguration="true" />
+ <topLevel name="tensor_in.tensor_in" />
+ <deviceFamily name="stratix10" />
+ <device name="1SN21BHU1F53E1VG" />
+</simPackage>
